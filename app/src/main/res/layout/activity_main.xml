@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titre_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Salut le monde !"
+        />
+
+    <Button
+        android:id="@+id/btn_lien_vers_liste_produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_titre_main"
+        android:layout_margin="50dp"
+        android:hint="LISTE DES PRODUITS"
+        android:onClick="onClickLienVersListe"
+        />
+
+    <Button
+        android:id="@+id/btn_lien_vers_ajout_produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_lien_vers_liste_produit"
+        android:layout_margin="50dp"
+        android:hint="AJOUTER UN PRODUIT"
+        android:onClick="onClickLienVersAjoutProduit"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ModifierDetailProduitActivity">
+
+    <TextView
+        android:id="@+id/titre_modifier_produit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="MODIFIER UN PRODUIT"
+        />
+
+    <EditText
+        android:id="@+id/et_modifier_nom_produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/titre_modifier_produit"
+        android:layout_marginTop="20dp"
+        android:text="PRODUIT"
+        />
+
+    <EditText
+        android:id="@+id/et_modifier_prix_produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_modifier_nom_produit"
+        android:layout_marginTop="20dp"
+        android:text="PRIX"
+        />
+
+    <EditText
+        android:id="@+id/et_modifier_description_produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_modifier_prix_produit"
+        android:layout_marginTop="20dp"
+        android:text="DESCRIPTION"
+        />
+
+    <EditText
+        android:id="@+id/et_modifier_website_produit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_modifier_description_produit"
+        android:layout_marginTop="20dp"
+        android:text="SITE INTERNET"
+        />
+
+    <RatingBar
+        android:id="@+id/rb_modifier_note_produit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_modifier_website_produit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:numStars="4"
+        android:stepSize="1"
+        />
+
+    <ToggleButton
+        android:id="@+id/tgbt_modifier_dejaAchete_produit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btn_modifier_enregistrer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        android:textOn="DEJA ACHETE"
+        android:textOff="JAMAIS ACHETE"
+        />
+
+    <Button
+        android:id="@+id/btn_modifier_enregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
+        android:hint="ENREGISTRER"
+        android:onClick="onClickEnregistrerModifierProduit"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
