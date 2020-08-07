@@ -86,4 +86,12 @@ public class ModifierDetailProduitActivity extends AppCompatActivity {
         Intent intent = new Intent(context, AffichageListeProduitActivity.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(context, MainActivity.class);
+        startActivity(intent);
+
+    }
 }
