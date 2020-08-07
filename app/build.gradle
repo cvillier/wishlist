@@ -42,7 +42,8 @@ dependencies {
 }
 
 /**
- * Je ne sais plus à quoi ça sert
+ * Permet à Google Chrome d'aller voir la bdd en temps réel (mais à implémenter pour chaque Activity)
+ * chrome://inspect/#devices
  */
 dependencies {
 
